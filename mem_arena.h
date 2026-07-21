@@ -2,6 +2,7 @@
 #define MEM_ARENA_H
 
 #include "mem_align.h"
+#include "mem_defs.h"
 
 typedef struct {
     unsigned char *buffer;   // pointer to the memory block
