@@ -34,6 +34,13 @@ Clean alignment helpers + high-performance linear arena allocator.
 | `mem_arena_remaining()` | Returns remaining free space. |
 | `mem_arena_pop()` | Moves the allocation offset backwards. |
 
+## Scope (`mem_scope.h`)
+
+| Function / Type | Description |
+|-----------------|-------------|
+| `mem_scope_t` | Structure storing the arena pointer and saved offset. |
+| `mem_scope_begin()` | Enters a temporary memory scope and saves the current offset. |
+| `mem_scope_end()` | Exits the scope and automatically restores the arena offset. |
 > **Note**
 >
 > `alignment` must always be a power of two.
